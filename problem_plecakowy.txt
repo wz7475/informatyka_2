@@ -14,4 +14,3 @@ liczba całkowita > 0 - n
 nieograniczona każdego z n przedmiotów o wartości w[1 - n] ciężarze c[1 - n] uporzadkowanych zgodnie z kryterium w_i/c_i >= w_i+1 / c_i+1
 liczba całkowita > 0 - waga - maksymalna pojemnosć plecaka
 wynik - liczba każdego z przedmiotów k[1 - n]
-
