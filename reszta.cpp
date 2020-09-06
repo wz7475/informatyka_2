@@ -12,14 +12,13 @@ int main()
 
     while (change > 0)
     {
-        if(change > T[i])
+        if(change >= T[i])
         {
             amount = change / T[i];
             change -= T[i] * amount;
-            cout << T[i] << "*" << amount << "\n";
+            cout << T[i] << "zl * " << amount << "\n";
         }
         i++;
     }
-
     return 0;
 }
