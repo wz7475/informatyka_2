@@ -38,7 +38,7 @@ int main()
 
     cout << "value of packback: " << pack_backpack(w, c, n, weight, k) << endl;
 
-    cout << "packed items:\n";
+    cout << "\n\npacked items:\n";
     for (int i = 1; i <= n; i++)
     {
         if (k[i] != 0)
@@ -47,7 +47,6 @@ int main()
             cout << "value: " << w[i] << endl;
             cout << "weight: " << c[i] << endl;
         }
-        
     }
     return 0;
 }

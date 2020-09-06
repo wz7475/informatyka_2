@@ -1,0 +1,3 @@
+ask Dzik whether packback algorithm is correct (case without carefully selected order - propetion in specification)
+
+arrays and variables - passing by value and reference
