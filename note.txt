@@ -3,3 +3,5 @@ ask Dzik whether packback algorithm is correct (case without carefully selected 
 arrays and variables - passing by value and reference
 
 In free time - rewrite code from previous algorithms
+
+Check whether files to print are ok - name of school
