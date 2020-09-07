@@ -22,7 +22,7 @@ int pack_backpack(int w[], int c[], int n, int weight, int k[])
         weight -= k[i] * c[i];
         score += k[i] * w[i];
     }
-    return score;
+    return score; 
 }
 
 int main()
