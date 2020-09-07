@@ -28,7 +28,7 @@ int pack_backpack(int w[], int c[], int n, int weight, int k[])
 int main()
 {   
     int w[50], c[50], k[50], weight, n;
-    
+    //w - value, c - weight, k - amount, n - amount of all items
     cout << "enter max weight of packpack: ";
     cin >> weight;
     cout << "enter amount of items: ";
