@@ -1,1 +1,4 @@
 In free time - rewrite code from previous algorithms
+
+
+compare net-source with photos - anagrams

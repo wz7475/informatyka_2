@@ -1,36 +1,50 @@
+#include <cstdlib>
 #include <iostream>
-#include <cstring>
+#include <string>
+
 using namespace std;
 
-bool check(string s1, string s2)
+bool anagram(string wyraz1, string wyraz2)
 {
-    int length1 = s1.size();
-    if (length1 != s2.size())
-        return false;
-    else
+    if (wyraz1.length() != wyraz2.length())
     {
-        int counter1 = 0, counter2 = 0;
-        for (int i = 0; i < length1; i++)
-        {
-            if (s1[i] == 'x')
-                counter1++;
-            if (s2[i] == 'x')
-                counter2++;
-        }
-        if (counter1 == counter2)
-            return true;
-        return false;
+        return false;   // dlugosc sie nie zgadza
     }
+
+    // sortujemy babelkowo obydwa stringi
+    // mozna za jednym razem, bo ich dlugosc jest taka sama
+    for (int i = 0; i < wyraz1.length() - 1; i++)
+    {
+        for (int j = 0; j < wyraz2.length() - 1; j++)
+        {
+            if (wyraz1[j] > wyraz1[j+1])
+                swap(wyraz1[j], wyraz1[j+1]);
+
+            if (wyraz2[j] > wyraz2[j+1])
+                swap(wyraz2[j], wyraz2[j+1]);
+        }
+    }
+
+    return wyraz1 == wyraz2; //zwracamy true lub false
 }
 
 int main()
 {
-    string s1, s2;
-    cout << "enter 2 words containing of 'x' and 'y':\n";
-    cin >> s1 >> s2;
-    if (check(s1, s2))
-        cout << "they're anagrams\n";
+    string wyraz1, wyraz2;
+
+    cout << "Podaj wyraz pierwszy" << endl;
+    cin >> wyraz1;
+
+    cout << "Podaj wyraz drugi" << endl;
+    cin >> wyraz2;
+
+    if (anagram(wyraz1, wyraz2))
+    {
+        cout << "Wyraz jest anagramem!" << endl;
+    }
     else
-        cout << "they aren't anagrams\n";
+    {
+         cout << "Wyraz NIE jest anagramem!" << endl;
+    }
     return 0;
 }
