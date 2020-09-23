@@ -7,7 +7,6 @@ for i in x:
     tab.append(int(i))
 
 print(x)
-
 tab = tab[::-1]
 for i in tab:
     if i != 0:
