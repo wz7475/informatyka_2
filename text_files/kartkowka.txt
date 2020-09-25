@@ -1,0 +1,5 @@
+1) problem plecakowy
+2) sortowanie tekstu
+3) anagramy
+4) cezar - szyfrowanie
+5) 2,3,8 z zadań maturalnych
