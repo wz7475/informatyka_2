@@ -2,4 +2,4 @@
 2) + sortowanie tekstu
 3) + anagramy
 4) + cezar - szyfrowanie
-5) 2,3,8 z zadań maturalnych
+5) + 2,3,8 z zadań maturalnych (szczesliwa, podwojna silnia, ciąg do n)
