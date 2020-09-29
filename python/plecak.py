@@ -1,26 +1,22 @@
-weight = int(input("enter max weight of backpack: "))
-n = int(input("enter amount of items: "))
-
+from math import floor
+n = int(input("enter n: "))
+weight = int(input("enter weight: "))
+print("enter weights and values:")
+w = [] 
 v = []
-w = []
 a = []
-score = 0
-
 for i in range(n):
-    v.append(int(input("enter value: ")))
-    w.append(int(input("enter weight: ")))
-
-def pack_backpack(a, w, v):
-    global score
-    global weight
-    for i in range(n):
-        a.append(weight / w[i])
-        weight -= a[i] * w[i]
-        score += a[i] * v[i]
-pack_backpack(a, w, v)
-print("\nvalue of packed items: {score}".format(score = score))
+    w.append(int(input("weight: ")))
+    v.append(int(input("value: ")))
+score = 0
+for i in range(n):
+    a.append(int(floor(weight/w[i])))
+    weight -= a[i] * w[i]
+    score += v[i] * a[i]
+print(score)
 for i in range(n):
     if a[i] != 0:
-        print("amount: {a[i]}")
-        print("value: {v[i]}")
-        print("weight: {w[i]}")
+        print("amount: {score}".format(score = a[i]))
+        print("value: {score}".format(score = v[i]))
+        print("weight: {score}".format(score = w[i]))
+        print()

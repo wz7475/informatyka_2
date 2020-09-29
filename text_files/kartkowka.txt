@@ -1,4 +1,4 @@
-1) problem plecakowy
+1) + problem plecakowy
 2) + sortowanie tekstu
 3) + anagramy
 4) + cezar - szyfrowanie
