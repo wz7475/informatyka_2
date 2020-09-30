@@ -1,0 +1,12 @@
+propozycje sposobów:
+1) skopiowac kod i wkeić na strone https://repl.it/languages/python3
+tam będzie konsola online
+
+2) jeśli jest zainstalowany python3 mozna pobrac z https://www.python.org/downloads/
+    a) w CMD/PowerShell polecenie
+    python sciezka_bezwgledna_do_pliku_example.python
+    b) w CMD/PowerShell ustawiajac katalog roboczy na folder z plikami: polecenie
+    python example.python
+
+3) preferowane ide np. pycharm
+    otworzyc plik w nim i zielony przycisk Run
